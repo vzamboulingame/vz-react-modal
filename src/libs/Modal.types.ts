@@ -1,7 +1,7 @@
 export interface ModalProps {
-  title: string;
-  message: string;
-  type: "basic" | "info" | "success" | "warning" | "error";
+  modalTitle: string;
+  modalMessage: string;
+  modalType: "basic" | "info" | "success" | "warning" | "error";
   isOpen: boolean;
   handleClose: () => void;
 }

@@ -21,9 +21,9 @@ export default function App(): JSX.Element {
       <p className="text-2xl text-gray-900 mx-auto">vz-react-modal</p>
 
       <Modal
-        title="Modal title"
-        message="Modal message"
-        type="basic"
+        modalTitle="Modal title"
+        modalMessage="Modal message"
+        modalType="basic"
         isOpen={isOpen}
         handleClose={handleClose}
       />
