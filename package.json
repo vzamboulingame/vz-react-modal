@@ -1,14 +1,47 @@
 {
   "name": "vz-react-modal",
-  "private": true,
-  "version": "0.0.0",
+  "private": false,
+  "version": "1.0.0",
+  "author": "vzamboulingame",
+  "description": "A simple react modal component created for OpenClassrooms Project #14",
   "type": "module",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vzamboulingame/vz-react-modal.git"
+  },
+  "keywords": [
+    "react",
+    "modal",
+    "component",
+    "typescript",
+    "tailwindcss",
+    "openclassrooms"
+  ],
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build",
+    "build": "vite build && tsc src/libs/index.ts --declaration --emitDeclarationOnly --jsx react --esModuleInterop --outDir dist",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
   },
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/vz-react-modal.umd.cjs",
+  "module": "./dist/vz-react-modal.js",
+  "exports": {
+    ".": {
+      "import": {
+        "default": "./dist/vz-react-modal.js",
+        "types": "./dist/index.d.ts"
+      },
+      "require": {
+        "default": "./dist/vz-react-modal.umd.cjs",
+        "types": "./dist/index.d.ts"
+      }
+    }
+  },
+  "types": "./dist/index.d.ts",
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
@@ -28,5 +61,9 @@
     "tailwindcss": "^3.3.3",
     "typescript": "^5.0.2",
     "vite": "^4.4.5"
+  },
+  "peerDependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   }
 }
