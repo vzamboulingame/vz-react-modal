@@ -12,7 +12,6 @@
 
 A simple react modal component created for OpenClassrooms Project #14.
 
-
 ## Install
 
 ```bash
@@ -63,7 +62,6 @@ export default function App(): JSX.Element {
 }
 ```
 
-
 ## Props
 
 The vz-react-modal component accepts the following props:
@@ -75,7 +73,6 @@ The vz-react-modal component accepts the following props:
 | `modalType` | `string` | The type of the modal (allowed values : "basic", "info", "success", "warning", "error") |
 | `isOpen` | `boolean` | A boolean indicating whether the modal is open or not |
 | `handleClose` | `function` | A function to handle the close event of the modal |
-
 
 ## Examples
 
@@ -89,6 +86,9 @@ You can find below examples of the different modal types :
 | Warning | ![Warning](https://github.com/vzamboulingame/vz-react-modal/blob/main/src/assets/warning.png) |
 | Error | ![Error](https://github.com/vzamboulingame/vz-react-modal/blob/main/src/assets/error.png) |
 
+## Styling
+
+The vz-react-modal component is styled with Tailwind CSS.
 
 ## License
 
