@@ -20,7 +20,7 @@
   ],
   "scripts": {
     "dev": "vite",
-    "build": "tsc & vite build",
+    "build": "tsc && vite build",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
   },
@@ -29,19 +29,13 @@
   ],
   "main": "./dist/vz-react-modal.umd.cjs",
   "module": "./dist/vz-react-modal.js",
+  "types": "./dist/index.d.ts",
   "exports": {
     ".": {
-      "import": {
-        "default": "./dist/vz-react-modal.js",
-        "types": "./dist/index.d.ts"
-      },
-      "require": {
-        "default": "./dist/vz-react-modal.umd.cjs",
-        "types": "./dist/index.d.ts"
-      }
+      "import": "./dist/vz-react-modal.js",
+      "require": "./dist/vz-react-modal.umd.cjs"
     }
   },
-  "types": "./dist/index.d.ts",
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
@@ -60,7 +54,8 @@
     "postcss": "^8.4.31",
     "tailwindcss": "^3.3.3",
     "typescript": "^5.0.2",
-    "vite": "^4.4.5"
+    "vite": "^4.4.5",
+    "vite-plugin-dts": "^3.6.0"
   },
   "peerDependencies": {
     "react": "^18.2.0",
