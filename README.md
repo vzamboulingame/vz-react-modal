@@ -2,7 +2,6 @@
 
 > This package is meant to be used for educational purpose. It is not intended to be maintained and could be deleted in the future.
 
-![NPM](https://img.shields.io/npm/v/@vzamboulingame/vz-react-modal.svg)
 ![React](https://img.shields.io/badge/React-18.2-teal)
 ![React DOM](https://img.shields.io/badge/React_dom-18.2-orange)
 ![Documentation](https://img.shields.io/badge/documentation-yes-brightgreen.svg)
