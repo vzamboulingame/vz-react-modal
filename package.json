@@ -1,7 +1,7 @@
 {
   "name": "vz-react-modal",
   "private": false,
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": "vzamboulingame",
   "description": "A simple react modal component created for OpenClassrooms Project #14",
   "type": "module",
