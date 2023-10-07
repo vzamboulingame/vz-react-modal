@@ -1,5 +1,5 @@
+import React, { useState } from "react";
 import Modal from "./libs";
-import { useState } from "react";
 
 /**
  * Renders the main App component.
@@ -17,7 +17,7 @@ export default function App(): JSX.Element {
   };
 
   return (
-    <div className="flex flex-col tex-center items-center min-h-screen p-4">
+    <div className="flex flex-col text-center items-center min-h-screen p-4">
       <p className="text-2xl text-gray-900 mx-auto">vz-react-modal</p>
 
       <Modal

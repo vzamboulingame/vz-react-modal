@@ -1,7 +1,7 @@
 {
   "name": "vz-react-modal",
   "private": false,
-  "version": "1.0.2",
+  "version": "1.0.3",
   "author": "vzamboulingame",
   "description": "A simple react modal component created for OpenClassrooms Project #14",
   "type": "module",
@@ -28,11 +28,12 @@
     "dist"
   ],
   "main": "./dist/vz-react-modal.umd.cjs",
-  "module": "./dist/vz-react-modal.js",
+  "module": "./dist/vz-react-modal.es.js",
   "types": "./dist/index.d.ts",
   "exports": {
     ".": {
-      "import": "./dist/vz-react-modal.js",
+      "types": "./dist/index.d.ts",
+      "import": "./dist/vz-react-modal.es.js",
       "require": "./dist/vz-react-modal.umd.cjs"
     }
   },
@@ -55,6 +56,7 @@
     "tailwindcss": "^3.3.3",
     "typescript": "^5.0.2",
     "vite": "^4.4.5",
+    "vite-plugin-css-injected-by-js": "^3.3.0",
     "vite-plugin-dts": "^3.6.0"
   },
   "peerDependencies": {
