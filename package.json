@@ -1,7 +1,7 @@
 {
   "name": "vz-react-modal",
   "private": false,
-  "version": "1.0.4",
+  "version": "1.0.5",
   "author": "Vinodh Zamboulingame",
   "description": "A lightweight React modal component based on the HTML dialog element",
   "type": "module",
@@ -15,8 +15,11 @@
     "modal",
     "dialog",
     "component",
+    "ui",
     "typescript",
+    "tailwind",
     "tailwindcss",
+    "vite",
     "openclassrooms"
   ],
   "scripts": {

@@ -36,7 +36,8 @@ export default function Modal({
 
   useEffect(() => {
     const dialog = dialogRef.current;
-    if (isOpen && !dialogRef.current?.open) {
+
+    if (isOpen && !dialog?.open) {
       dialog?.showModal();
     } else {
       dialog?.close();
@@ -49,9 +50,7 @@ export default function Modal({
         <div className={titleClassName}>{modalTitle}</div>
         <div className={messageClassName}>{modalMessage}</div>
         <button
-          type="button"
           onClick={handleClick}
-          title="Close Modal"
           aria-label="Close Modal"
           className={buttonClassName}
         >

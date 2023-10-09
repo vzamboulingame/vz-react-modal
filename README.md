@@ -7,9 +7,11 @@
 ![Documentation](https://img.shields.io/badge/documentation-yes-brightgreen.svg)
 ![MIT licensed](https://img.shields.io/badge/license-MIT-blue.svg)
 
+
 ## About
 
 A lightweight React modal component based on the HTML dialog element.
+
 
 ## Install
 
@@ -23,6 +25,7 @@ yarn add -D vz-react-modal
 # pnpm
 pnpm add -D vz-react-modal
 ```
+
 
 ## Usage
 
@@ -83,11 +86,12 @@ export default function App(): JSX.Element {
         modalType="basic"
         isOpen={isOpen}
         handleClose={handleClose}
-      />{" "}
+      />
     </div>
   );
 }
 ```
+
 
 ## Props
 
@@ -101,6 +105,7 @@ The vz-react-modal component accepts the following props:
 | `isOpen`       | `boolean`  | A boolean indicating whether the modal is open or not                                   |
 | `handleClose`  | `function` | A function to handle the close event of the modal                                       |
 
+
 ## Examples
 
 You can find below examples of the different modal types :
@@ -113,10 +118,12 @@ You can find below examples of the different modal types :
 | Warning | ![Warning](https://github.com/vzamboulingame/vz-react-modal/blob/main/src/assets/warning.png) |
 |  Error  |   ![Error](https://github.com/vzamboulingame/vz-react-modal/blob/main/src/assets/error.png)   |
 
+
 ## Styling
 
 The vz-react-modal component is styled with Tailwind CSS.
 
+
 ## License
 
-MIT © [vzamboulingame](https://github.com/vzamboulingame)
+MIT © [Vinodh Zamboulingame](https://github.com/vzamboulingame/vz-react-modal/blob/main/LICENSE)
