@@ -32,51 +32,51 @@ import { useState } from "react";
 import Modal from "vz-react-modal";
 
 export default function App() {
-	// Define state to track whether the modal is open or not
-	const [isOpen, setIsOpen] = useState(false);
+  // Define state to track whether the modal is open or not
+  const [isOpen, setIsOpen] = useState(false);
 
-	// Add function to handle the close event of the modal
-	const handleClose = () => {
-		setIsOpen(false);
-	};
+  // Add function to handle the close event of the modal
+  const handleClose = () => {
+    setIsOpen(false);
+  };
 
-	// Add function to handle the open event of the modal
-	const handleClick = () => {
-		setIsOpen(true);
-	};
+  // Add function to handle the open event of the modal
+  const handleClick = () => {
+    setIsOpen(true);
+  };
 
-	return (
-		<div
-			style={{
-				margin: "0 auto",
-				textAlign: "center",
-				minHeight: "100vh",
-				padding: "1rem",
-			}}>
-			<p style={{ fontSize: "2rem", color: "#333", margin: "auto" }}>vz-react-modal</p>
-			<button
-				style={{
-					backgroundColor: "#0074E4",
-					padding: "0.5rem 1rem",
-					fontWeight: "bold",
-					color: "#fff",
-					cursor: "pointer",
-					borderRadius: "0.25rem",
-					marginTop: "1rem",
-				}}
-				onClick={handleClick}>
-				Open Modal
-			</button>
-			{/* Pass the props to the Modal component */}
-			<Modal
-				modalTitle="Modal title"
-				modalMessage="Modal message"
-				modalType="basic"
-				isOpen={isOpen}
-				handleClose={handleClose}
-			/>
-		</div>
-	);
+  return (
+    <div
+      style={{
+        margin: "0 auto",
+        textAlign: "center",
+        minHeight: "100vh",
+        padding: "1rem",
+      }}>
+      <p style={{ fontSize: "2rem", color: "#333", margin: "auto" }}>vz-react-modal</p>
+      <button
+        style={{
+          backgroundColor: "#0074E4",
+          padding: "0.5rem 1rem",
+          fontWeight: "bold",
+          color: "#fff",
+          cursor: "pointer",
+          borderRadius: "0.25rem",
+          marginTop: "1rem",
+        }}
+        onClick={handleClick}>
+        Open Modal
+      </button>
+      {/* Pass the props to the Modal component */}
+      <Modal
+        modalTitle="Modal title"
+        modalMessage="Modal message"
+        modalType="basic"
+        isOpen={isOpen}
+        handleClose={handleClose}
+      />
+    </div>
+  );
 }
 ```
 
